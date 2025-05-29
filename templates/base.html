@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel List</title>
+    <!-- <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    /> -->
+  </head>
+  <body>
+    <style>
+      body{
+background-color: rgb(29, 29, 29);
+}
+.container {
+background-color: rgb(225, 228, 232);
+/* background-image: url("/images/boston.jpg"); */
+width: 80%;
+height: 40%;
+margin: 0 auto;
+font-family: Helvetica;
+}
+
+h1{
+font-size: 50px;
+text-align: center;
+align-items: center;
+font-family: Helvetica;
+color:  rgb(14, 14, 14);
+
+}
+
+header {
+text-align: center;
+font-size: 30px;
+/* border-bottom: 1px solid black; */
+padding-bottom: 5px;
+}
+footer,
+main {
+padding: 20px;
+}
+p.post {
+font-size: 16px;
+}
+
+footer {
+margin-top: 20%;
+margin-bottom: 2px;
+}
+</style>
+    <div class="container">
+      <header>
+        <h1>Travel List to Boston</h1>
+        <p>
+          <hr>
+          <a href="{{ url_for('home')}}">Home</a> |
+          <a href="{{ url_for('read')}}">Boston</a> |
+          <a href="{{ url_for('create')}}">Add Place</a>
+          <hr>
+        </p>
+      </header>
+      <main>{% block container %} {% endblock %}</main>
+      <footer>
+        <p>
+          <hr>
+          Having any trouble? Contact XX-XXXX-XXXX.
+        </p>
+        </footer>
+    </div>
+  </body>
+</html>

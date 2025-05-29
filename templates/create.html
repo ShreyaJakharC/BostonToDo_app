@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% block container %}
+
+<style>
+ h2{
+  text-align: center;
+  align-items: center;
+ }
+ 
+ p{
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  font-family: Helvetica;
+  color:  rgb(93, 35, 106);
+  }
+      </style>
+
+
+<h2>Do you know any places that are MUST Visit! Add them below!!</h2>
+
+<p>
+
+</p>
+<form method="POST" action="{{ url_for('create_post') }}">
+  <p>Your name: <input type="text" id="name" name="name" /><br /></p>
+  <p>Place: <input type="text" id="place" name="place" /><br /></p>
+  <p>
+    Address:
+    <textarea type="text" id="address" name="address"></textarea>
+  </p>
+  <p>
+    <a href="{{ url_for('read')}}">Cancel</a>
+    <input type="submit" name="post-btn" value="Post" />
+  </p>
+</form>
+{% endblock %}

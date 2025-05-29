@@ -1,0 +1,39 @@
+body{
+  background-color: rgb(224, 208, 208);
+}
+
+.container {
+ 
+  width: 50%;
+  margin: 0 auto;
+}
+
+h1{
+
+  text-align: center;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  /* border-bottom: 1px solid black; */
+  padding-bottom: 10px;
+}
+footer,
+main {
+  padding: 20px;
+}
+
+header,
+main {
+  border-bottom: 2px solid;
+  margin-bottom: 5px;
+}
+
+p.post {
+  font-size: 16px;
+}
+
+footer {
+  margin-bottom: 2px;
+}
